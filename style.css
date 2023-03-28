@@ -1,14 +1,15 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,300&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 /* navigation bar  */
 .navbar {
     background-color: brown;
@@ -19,15 +20,17 @@ html{
     z-index: 999;
 }
 
-.items .ul span{
+.items .ul span {
     color: orangered;
 }
-.items .ul a{
+
+.items .ul a {
     font-size: 1.3rem;
     margin-left: 1rem;
     text-decoration: none;
     color: white;
 }
+
 .items .ul {
     display: flex;
     align-items: center;
@@ -57,46 +60,57 @@ html{
     top: 0.8rem;
     display: none;
 }
+
 /* home section */
-.left, .right{
-    width: 50%;
+.container {
+    /* width: 95%; */
+    margin: auto;
+}
+
+.left,
+.right {
+    width: 45%;
     padding: 1rem;
 }
-.home{
-    background-image: url("pic22.jpg");
+
+.home {
+    background-image: url("files/pic22.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 110vh;
     min-height: 200px;
 }
-.col{
+
+.col {
     display: flex;
     color: white;
 }
-.col .left{
+
+.col .left {
     margin: 12rem 5rem;
     transition: all 1s ease;
-    width: 100%;
+    width: 90%;
     padding: 0;
 }
-.col .left .text1{
+
+.col .left .text1 {
     font-size: 3rem;
 }
-.col .left .text2{
+
+.col .left .text2 {
     font-size: 5rem;
     margin: 0.5rem 0rem;
 }
-.col .left .text3{
+
+.col .left .text3 {
     font-size: 2rem;
 }
-.col .text3 span{
-   color: red;
+
+.col .text3 span {
+    color: red;
 }
-.col .left a,
-.education .right a,
-.project a,
-.contact .btn,
-.about .right a{
+
+.col .left a {
     background-color: rgb(135 0 26);
     color: aliceblue;
     border: 2px solid crimson;
@@ -104,53 +118,83 @@ html{
     padding: 0.7rem;
     text-decoration: none;
 }
+
+.education .right a,
+.project a,
+.contact .btn,
+.about .right a {
+    background-color: rgb(135 0 26);
+    color: aliceblue;
+    border: 2px solid crimson;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 8rem;
+}
+
 .home .col .left a:hover,
 .education .right a:hover,
 .project .left a:hover,
 .contact .btn:hover,
-.about .right a:hover{
+.about .right a:hover {
     color: crimson;
     background: none;
 }
 
 /* skill section */
-.skills{
+.skills {
     display: flex;
 }
-.skills .left{
+
+.skills .left {
     line-height: 1.5rem;
 }
+
+/* .skillsection ,
+.educationsection ,
+.projectsection ,
+.contactsection ,
+.aboutsection{
+    margin-top: 15rem;
+} */
 .skillsection h1,
 .educationsection h1,
 .projectsection h1,
 .contactsection h1,
-.aboutsection h1{
+.aboutsection h1 {
     margin: 2rem 1rem;
     text-align: center;
     margin: 7rem 4rem 3rem 4rem;
 }
 
-.skills .right .bars{
+.skills .right .bars {
     margin-bottom: 15px;
 }
-.skills  .right .info{
+
+.skills .right .info {
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
-.skills  .right span{
+
+.skills .right span {
     font-weight: 500;
     font-size: 18px;
 }
-.skills  .right .line{
+
+.skills .right .line {
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
     color: blue;
 }
-.skills  .right .line::before{
+
+.skills .right .line::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -158,85 +202,173 @@ html{
     top: 0;
     background: crimson;
 }
-.skills .right .java::before{
+
+.skills .right .java::before {
     width: 90%;
 }
-.skills .right .css::before{
+
+.skills .right .css::before {
     width: 60%;
 }
-.skills .right .c::before{
+
+.skills .right .c::before {
     width: 80%;
 }
-.skills .right .dsa::before{
+
+.skills .right .dsa::before {
     width: 80%;
 }
-.skills .right .mysql::before{
+
+.skills .right .mysql::before {
     width: 70%;
 }
-.skills .right .html::before{
+
+.skills .right .html::before {
     width: 70%;
 }
 
 /* education section */
-.education{
+.education {
     display: flex;
 }
-.education .left img{
+
+.education .left img {
     height: 23rem;
+    width: -webkit-fill-available !important;
+}
+
+.education .right {
+    display: table;
 }
 
 /* projectsection  */
-.project{
+.project {
     display: flex;
 }
-.project .right img{
+
+.project .right img {
     height: 17rem;
 }
 
 /* contact section */
-.contact .left{
+.contact .left {
     width: 90%;
     margin: auto;
     line-height: 2rem;
 }
-.contact input,.contact textarea{
+
+.contact input,
+.contact textarea {
     padding: .5rem;
     font-size: 1rem;
     margin: .5rem;
     width: 60%;
 }
-.contact .btn{
+
+.contact .btn {
     cursor: pointer;
 }
-/* .home, .skills, .project, .contact{
-    height: 100vh;
-    align-items: center
-} */
-.about{
+
+.about {
     display: flex;
 }
-.about .left img{
+
+.about .left img {
     height: 23rem;
     margin: auto 2rem;
 }
 
+/*footer section*/
+footer .fcol {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    padding: 2rem 1rem;
+    border-top: 1px solid black;
+    align-items: flex-start;
+    color: black;
+    background-color: antiquewhite;
+}
+
+footer .col1,
+.col2,
+.col3 {
+    display: grid;
+    width: 15rem;
+    line-height: 1.5rem;
+}
+
+footer .col4 i {
+    margin: 0.3rem;
+    color: none;
+}
+
+footer .fcol a {
+    text-decoration: none;
+    color: #350606;
+}
+
 /* Responsive code */
+/* /*
+@media (max-width:440px) {
+.container{
+    width: 155% !important;
+    /* background-color: brown; */
+/*
+}
+}
+@media (max-width:310px) {
+.container{
+    width: 205% !important;
+
+}
+@media (max-width:247px) {
+.container{
+    width: 205% !important;
+
+}
+}
+@media (max-width:850px) {
+.container{
+    width: 105%;
+}
+} */
 @media (max-width:715px) {
     #btn {
         display: block;
     }
+
     .listitem {
         display: none;
     }
+
     .displayflex {
         display: block;
         text-align: center;
     }
+
     .flexcolumn {
         flex-direction: column;
     }
-    .home, .skills, .project, .contact, .education{
-    display: block;
-}
-    
+
+    .home,
+    .skills,
+    .project,
+    .contact,
+    .education,
+    .about {
+        display: block;
+    }
+
+    .left,
+    .right {
+        /* width: 82%; */
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .images {
+        display: block;
+        margin: auto !important;
+    }
 }
