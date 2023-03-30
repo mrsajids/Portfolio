@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 html {
@@ -16,7 +16,7 @@ html {
     color: white;
     align-items: center;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 999;
 }
 
@@ -36,7 +36,7 @@ html {
     align-items: center;
     list-style: none;
     padding-left: 0;
-    transition: 800ms ease;
+    transition: 300ms ease;
     height: 4rem;
     margin: 0;
 }
@@ -50,7 +50,7 @@ html {
     color: black;
 }
 
-.bar {
+.bar{
     font-family: FontAwesome;
     font-style: normal;
     font-size: 1.5rem;
@@ -59,6 +59,18 @@ html {
     right: 1.5rem;
     top: 0.8rem;
     display: none;
+}
+.fafa{
+   
+    position: absolute;
+    float: left;
+    right: 14px;
+    top: 8px;
+    font-family: 'FontAwesome';
+    font-style: normal;
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
 }
 
 /* home section */
@@ -69,15 +81,17 @@ html {
 
 .left,
 .right {
+/*     text-align: justify; */
     width: 45%;
     padding: 1rem;
+  line-height: 1.5rem;
+    text-align: justify;
 }
 
 .home {
     background-image: url("files/pic22.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 110vh;
     min-height: 200px;
 }
 
@@ -99,7 +113,7 @@ html {
 
 .col .left .text2 {
     font-size: 5rem;
-    margin: 0.5rem 0rem;
+      margin: 3.5rem 0rem;
 }
 
 .col .left .text3 {
@@ -153,13 +167,6 @@ html {
     line-height: 1.5rem;
 }
 
-/* .skillsection ,
-.educationsection ,
-.projectsection ,
-.contactsection ,
-.aboutsection{
-    margin-top: 15rem;
-} */
 .skillsection h1,
 .educationsection h1,
 .projectsection h1,
@@ -206,9 +213,12 @@ html {
 .skills .right .java::before {
     width: 90%;
 }
+.skills .right .react::before {
+    width: 70%;
+}
 
-.skills .right .css::before {
-    width: 60%;
+.skills .right .javascript::before {
+    width: 80%;
 }
 
 .skills .right .c::before {
@@ -224,7 +234,7 @@ html {
 }
 
 .skills .right .html::before {
-    width: 70%;
+    width: 80%;
 }
 
 /* education section */
@@ -240,12 +250,24 @@ html {
 .education .right {
     display: table;
 }
-
+.education .right span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: block;
+       margin: 0.5rem 0;
+}
+.education .right p{
+  text-align: right;
+    margin: 0;
+}
 /* projectsection  */
 .project {
     display: flex;
 }
-
+.prjheading{
+  font-size: 1.3rem;
+    font-weight: 600;
+}
 .project .right img {
     height: 17rem;
 }
@@ -274,7 +296,7 @@ html {
 }
 
 .about .left img {
-    height: 23rem;
+    height: 25rem;
     margin: auto 2rem;
 }
 
@@ -292,50 +314,31 @@ footer .fcol {
 
 footer .col1,
 .col2,
-.col3 {
+.col3,.col4 {
     display: grid;
     width: 15rem;
     line-height: 1.5rem;
+      padding: 0rem 2rem;
 }
 
 footer .col4 i {
     margin: 0.3rem;
-    color: none;
 }
 
 footer .fcol a {
     text-decoration: none;
     color: #350606;
+    display: block;
 }
 
 /* Responsive code */
-/* /*
-@media (max-width:440px) {
-.container{
-    width: 155% !important;
-    /* background-color: brown; */
-/*
-}
-}
-@media (max-width:310px) {
-.container{
-    width: 205% !important;
 
-}
-@media (max-width:247px) {
-.container{
-    width: 205% !important;
-
-}
-}
-@media (max-width:850px) {
-.container{
-    width: 105%;
-}
-} */
 @media (max-width:715px) {
     #btn {
         display: block;
+    }
+    #can{
+        display: none;
     }
 
     .listitem {
@@ -359,16 +362,30 @@ footer .fcol a {
     .about {
         display: block;
     }
-
+    .col .left .text1,
+    .col .left .text3
+    {
+        font-size: 1.5rem;
+    }
+    .col .left .text2{
+        font-size: 2.5rem;
+    }
     .left,
     .right {
-        /* width: 82%; */
+        text-align: justify;
+        width: 82%;
         margin: auto;
         padding: 1rem;
     }
-
     .images {
         display: block;
         margin: auto !important;
+        height: 52% !important;
+        width: 100% !important;
+    }
+    footer .fcol{
+        display: flex;
+        flex-direction: column;
+        align-items: center
     }
 }
