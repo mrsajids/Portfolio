@@ -29,7 +29,6 @@ function cls() {
   for (let i = 0; i < c.length; i++) {
     c[i].classList.remove("displayflex");
   }
-
   ul[0].classList.remove("flexcolumn");
   if (ul[0].classList.contains("flexcolumn"))
     ul[0].style.height = "15rem";
