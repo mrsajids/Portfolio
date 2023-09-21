@@ -211,14 +211,14 @@ html {
 }
 
 .skills .right .java::before {
-    width: 90%;
+    width: 80%;
 }
 .skills .right .react::before {
-    width: 70%;
+    width: 80%;
 }
 
 .skills .right .javascript::before {
-    width: 80%;
+    width: 90%;
 }
 
 .skills .right .c::before {
@@ -230,7 +230,7 @@ html {
 }
 
 .skills .right .mysql::before {
-    width: 70%;
+    width: 80%;
 }
 
 .skills .right .html::before {
