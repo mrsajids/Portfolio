@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Force Inter font globally */
+@layer base {
+  * {
+    font-family: 'Inter', system-ui, sans-serif !important;
+  }
+}
+
+/* Custom animations and styles */
+@keyframes gradient {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-gradient {
+  animation: gradient 8s linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s linear infinite;
+}
+
+/* 3D Transform Utilities */
+.transform-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* 3D Shapes */
+.floating-shape {
+  background: linear-gradient(45deg, rgba(147, 51, 234, 0.3), rgba(59, 130, 246, 0.3));
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(147, 51, 234, 0.2);
+}
+
+.floating-shape.cube {
+  background: linear-gradient(45deg, rgba(147, 51, 234, 0.4), rgba(236, 72, 153, 0.4));
+  transform-style: preserve-3d;
+}
+
+.floating-shape.pyramid {
+  background: linear-gradient(45deg, rgba(59, 130, 246, 0.4), rgba(16, 185, 129, 0.4));
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.floating-shape.sphere {
+  background: radial-gradient(circle at 30% 30%, rgba(236, 72, 153, 0.5), rgba(147, 51, 234, 0.3));
+  border-radius: 50%;
+}
+
+.floating-shape.torus {
+  background: conic-gradient(from 0deg, rgba(147, 51, 234, 0.4), rgba(59, 130, 246, 0.4), rgba(147, 51, 234, 0.4));
+  border-radius: 50%;
+  border: 8px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Enhanced animations */
+@keyframes float3D {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: translate3d(20px, -20px, 10px) rotateX(90deg) rotateY(90deg);
+  }
+  50% {
+    transform: translate3d(-20px, 20px, -10px) rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    transform: translate3d(-20px, -20px, 10px) rotateX(270deg) rotateY(270deg);
+  }
+}
+
+.animate-float3d {
+  animation: float3D 8s ease-in-out infinite;
+}
+
+/* Perspective utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
