@@ -2,35 +2,40 @@ import { Code, Zap, User, Sparkles, Briefcase, Github, Linkedin, Twitter, Instag
 import whatsappSvg from "../assets/whatsapp-svgrepo-com.svg"
 export const projects = [
   {
-    title: "Next Generation Communicator",
-    description: "Customer engagement platform enabling clients to communicate with customers via WhatsApp using Meta Cloud API. Supports messages, catalogues, and promotional content through centralized dashboard.",
-    tech: ["Node.js", "MongoDB", "Meta API", "JWT", "Redis", "Kafka"],
+    title: "Accurest - Supply Chain & Inventory Management System",
+    description: "Scalable supply chain and inventory management platform with dynamic role-based access control, optimized data fetching, and RESTful API integration.",
+    tech: ["React", "Redux Toolkit", "React Query", "Spring Boot", "PostgreSQL"],
+    gradient: "from-blue-500 via-cyan-600 to-teal-700",
+    icon: "📦",
+    period: "12/2025 - 04/2026",
+    features: [
+      "Developed scalable frontend architecture using React, Redux Toolkit, and React Query",
+      "Designed dynamic module and permission-based access systems for role-driven UI rendering",
+      "Optimized data fetching with React Query, reducing redundant API calls and improving dashboard performance by leveraging caching and background refetching strategies",
+      "Led and mentored junior developers, ensuring code quality and best practices",
+      "Built reusable and modular components to improve development speed and maintainability",
+      "Collaborated with Spring Boot backend teams to define and optimize REST API contracts, reducing over-fetching and improving frontend rendering efficiency"
+    ]
+  },
+  {
+    title: "Next Generation Communicator - WhatsApp-Based Customer Engagement Platform",
+    description: "WhatsApp-based customer engagement platform enabling businesses to register, communicate with customers via Meta Cloud API. Supports messages, catalogs, and multimedia content with targeted outreach.",
+    tech: ["Node.js", "Express.js", "PostgreSQL", "Redis", "Kafka", "React"],
     gradient: "from-green-500 via-teal-600 to-blue-700",
     icon: "💬",
     period: "06/2025 - 07/2025",
     features: [
-      "Custom APIs with Meta WhatsApp Business API",
-      "Message templates and catalog uploads", 
-      "Redis caching and Kafka messaging",
-      "Secure Meta services integration"
+      "Customer engagement platform enabling clients to register and communicate with customers via WhatsApp using the Meta Cloud API",
+      "Developed custom APIs utilizing the Meta (WhatsApp Business) API to enable sending of messages, catalogs, and multimedia content",
+      "Built user registration, authentication, and account management modules using Node.js, MongoDB, and JWT",
+      "Implemented message scheduling features for targeted customer outreach",
+      "Improved system performance using Redis caching and Kafka-based asynchronous processing",
+      "Ensured reliable message delivery by handling status tracking and user feedback workflows",
+      "Mentored junior React developer, guiding them in writing clean, maintainable code and following best practices"
     ]
   },
   {
-    title: "E-Tolling System",
-    description: "Responsive front-end for EToll system with interactive features like real-time toll data and vehicle tracking. Dynamic map visualizations of toll stations and traffic routes.",
-    tech: ["React.js", "Leaflet.js", "Redux Toolkit", "Ant Design"],
-    gradient: "from-blue-500 via-purple-600 to-pink-700",
-    icon: "🛣️",
-    period: "10/2024 - 04/2025",
-    features: [
-      "Real-time toll data and vehicle tracking",
-      "Dynamic map visualizations with Leaflet.js",
-      "Advanced state management with Redux Toolkit",
-      "Custom form components with Ant Design"
-    ]
-  },
-  {
-    title: "Astrogyata",
+    title: "Astrogyata – Real-Time Astrology Consultation Platform",
     description: "Real-time astrology consultation platform with responsive UI, scalable backend APIs, and secure payment integration. Comprehensive admin dashboard for platform management.",
     tech: ["React.js", "Node.js", "MongoDB", "PhonePay API"],
     gradient: "from-purple-500 via-pink-600 to-red-700",
@@ -44,7 +49,7 @@ export const projects = [
     ]
   },
   {
-    title: "Aditya Gases ERP Solution",
+    title: "Aditya Gases - An ERP Solution",
     description: "Web-based ERP system for managing gas inventory, orders, billing, and deliveries. Built with Angular and reactive programming for real-time data management.",
     tech: ["Angular", "RxJS", "TypeScript", "Bootstrap", "REST APIs"],
     gradient: "from-emerald-500 via-teal-600 to-cyan-700",
