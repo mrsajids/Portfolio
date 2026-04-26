@@ -1,5 +1,5 @@
 import { Code, Zap, User, Sparkles, Briefcase, Github, Linkedin, Twitter, Instagram, Youtube } from 'lucide-react';
-import whatsappSvg from "./whatsapp-svgrepo-com.svg"
+import whatsappSvg from "../assets/whatsapp-svgrepo-com.svg"
 export const projects = [
   {
     title: "Next Generation Communicator",
@@ -121,6 +121,10 @@ export const professionalSkills = [
   { name: "Agile/Scrum", icon: Briefcase, level: 80 }
 ];
 
+export const personalData = {
+  totalExperience:'3+',
+  resumeDriveLink: 'https://drive.google.com/file/d/1S3r5iZqNd7zXRice8ggFYMHfsQOG47jv/view?usp=sharing'
+}
 export const experience = [
   {
     role: "Frontend Developer",
@@ -149,7 +153,7 @@ export const experience = [
   {
     role: "Full Stack Web Developer",
     company: "Intechzia Solutions",
-    period: "03/2023 - 08/2023",
+    period: "03/2023 - 02/2024",
     description: "Started as a Full Stack Developer, collaborating with cross-functional teams to build and maintain scalable applications. Completed a 6-month intensive Full Stack internship.",
     achievements: [
       "Gained hands-on experience with HTML, CSS, JavaScript, React.js, Node.js and MongoDB",

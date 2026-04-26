@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronDown, Rocket } from 'lucide-react';
 import CodeIcon3D from '../CodeIcon3D';
+import { personalData } from '../../data/constants';
 
 export default function HeroSection({ mousePos, scrollY, scrollToSection }) {
   return (
@@ -26,7 +27,7 @@ export default function HeroSection({ mousePos, scrollY, scrollToSection }) {
         
         <div className="flex gap-6 justify-center flex-wrap">
           <button 
-            onClick={() => window.open('https://drive.google.com/file/d/1M7YaRUx_PRidKD4UK8AvXnhYF1MfwvJW/view?usp=sharing', '_blank')}
+            onClick={() => window.open(personalData.resumeDriveLink, '_blank')}
             className="group relative px-10 py-4 overflow-hidden rounded-full font-bold text-lg"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 transition-transform group-hover:scale-105"></div>

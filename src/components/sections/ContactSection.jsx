@@ -32,7 +32,7 @@ export default function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="py-32 px-6 relative z-10">
+    <section id="contact" className="py-32 px-6 relative">
       <div className="max-w-5xl mx-auto text-center">
         <div className="relative inline-block mb-12">
           <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur-2xl opacity-50"></div>
