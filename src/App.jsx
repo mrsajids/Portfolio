@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Navigation from './components/Navigation';
-import Background from './components/Background';
+import Navigation from './components/ui/Navigation';
+import Background from './components/ui/Background';
 import HeroSection from './components/sections/HeroSection';
 import AboutSection from './components/sections/AboutSection';
 import SkillsSection from './components/sections/SkillsSection';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ChevronDown, Rocket } from 'lucide-react';
-import CodeIcon3D from '../CodeIcon3D';
+import CodeIcon3D from '../3d/CodeIcon3D';
 import { personalData } from '../../data/constants';
 
 export default function HeroSection({ mousePos, scrollY, scrollToSection }) {

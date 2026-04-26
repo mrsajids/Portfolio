@@ -1,6 +1,6 @@
 import React from 'react';
 import { socialMedia } from '../../data/constants';
-import SocialIcon3D from '../SocialIcon3D';
+import SocialIcon3D from '../3d/SocialIcon3D';
 
 export default function SocialMediaSection() {
   return (

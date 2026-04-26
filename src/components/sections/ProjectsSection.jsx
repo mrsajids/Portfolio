@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard3D from '../ProjectCard3D';
+import ProjectCard3D from '../3d/ProjectCard3D';
 import { projects } from '../../data/constants';
 
 export default function ProjectsSection() {

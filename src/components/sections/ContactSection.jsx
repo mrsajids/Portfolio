@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Github, Linkedin, Sparkles, PhoneCall } from 'lucide-react';
-import ContactModal from '../ContactModal';
+import ContactModal from '../ui/ContactModal';
 
 export default function ContactSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
