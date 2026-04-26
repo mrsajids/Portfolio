@@ -1,6 +1,6 @@
 import React from 'react';
 import { Code, Zap, User, Sparkles, Briefcase, Users } from 'lucide-react';
-import SkillCard3D from '../SkillCard3D';
+import SkillCard3D from '../3d/SkillCard3D';
 import { technicalSkills, professionalSkills } from '../../data/constants';
 
 export default function SkillsSection({ mousePos }) {

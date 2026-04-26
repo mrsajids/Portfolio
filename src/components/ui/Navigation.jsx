@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { menuItems } from '../data/constants';
+import { menuItems } from '../../data/constants';
 
 export default function Navigation({ activeSection, scrollToSection }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

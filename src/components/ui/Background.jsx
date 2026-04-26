@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import AnimatedBackground3D from './AnimatedBackground3D';
+import AnimatedBackground3D from '../3d/AnimatedBackground3D';
 import FloatingShapes from './FloatingShapes';
 
 export default function Background({ mousePos }) {
