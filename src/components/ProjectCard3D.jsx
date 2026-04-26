@@ -56,7 +56,18 @@ export default function ProjectCard3D({ project, index }) {
                 {/* <div className="absolute -inset-2 bg-white/20 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div> */}
               </div>
               <div>
-                <h3 className="text-2xl font-black text-white mb-1">{project.title}</h3>
+                <h3 className="text-2xl font-black text-white mb-1">
+  {project.title}
+</h3>
+
+<h4 className="text-lg font-semibold text-white/90 mb-1">
+  {project.subtitle}
+</h4>
+
+<h5 className="text-sm text-white/80 mb-2 flex items-center gap-2">
+  <GraduationCap className="w-4 h-4" />
+  <span className='italic'>{project.role}</span>
+</h5>
                 <div className="flex items-center gap-2 text-white/80">
                   <Calendar className="w-4 h-4" />
                   <span className="text-sm font-medium">{project.period}</span>

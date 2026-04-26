@@ -2,7 +2,9 @@ import { Code, Zap, User, Sparkles, Briefcase, Github, Linkedin, Twitter, Instag
 import whatsappSvg from "../assets/whatsapp-svgrepo-com.svg"
 export const projects = [
   {
-    title: "Accurest - Supply Chain & Inventory Management System",
+    title: "Accurest",
+    subtitle:'Supply Chain & Inventory Management System',
+    role: "Frontend Developer",
     description: "Scalable supply chain and inventory management platform with dynamic role-based access control, optimized data fetching, and RESTful API integration.",
     tech: ["React", "Redux Toolkit", "React Query", "Spring Boot", "PostgreSQL"],
     gradient: "from-blue-500 via-cyan-600 to-teal-700",
@@ -18,7 +20,9 @@ export const projects = [
     ]
   },
   {
-    title: "Next Generation Communicator - WhatsApp-Based Customer Engagement Platform",
+    title: "Next Generation Communicator",
+    subtitle:'WhatsApp-based Customer Engagement Platform',
+    role: "Full Stack Developer",
     description: "WhatsApp-based customer engagement platform enabling businesses to register, communicate with customers via Meta Cloud API. Supports messages, catalogs, and multimedia content with targeted outreach.",
     tech: ["Node.js", "Express.js", "PostgreSQL", "Redis", "Kafka", "React"],
     gradient: "from-green-500 via-teal-600 to-blue-700",
@@ -35,7 +39,9 @@ export const projects = [
     ]
   },
   {
-    title: "Astrogyata – Real-Time Astrology Consultation Platform",
+    title: "Astrogyata",
+    subtitle:'Real-time Astrology Consultation Platform',
+    role: "Full Stack Developer",
     description: "Real-time astrology consultation platform with responsive UI, scalable backend APIs, and secure payment integration. Comprehensive admin dashboard for platform management.",
     tech: ["React.js", "Node.js", "MongoDB", "PhonePay API"],
     gradient: "from-purple-500 via-pink-600 to-red-700",
@@ -49,7 +55,9 @@ export const projects = [
     ]
   },
   {
-    title: "Aditya Gases - An ERP Solution",
+    title: "Aditya Gases",
+    subtitle:'Gas Inventory and Order Management System',
+    role: "Frontend Developer",
     description: "Web-based ERP system for managing gas inventory, orders, billing, and deliveries. Built with Angular and reactive programming for real-time data management.",
     tech: ["Angular", "RxJS", "TypeScript", "Bootstrap", "REST APIs"],
     gradient: "from-emerald-500 via-teal-600 to-cyan-700",
