@@ -1,7 +1,11 @@
-import React from 'react';
+import { Blurhash } from 'react-blurhash';
+import { useState } from 'react';
 import { personalData } from '../../data/constants';
 import myImage from '../../assets/profile.jpg';
+
 export default function AboutSection() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
     <section id="about" className="py-32 px-6 relative z-10">
       <div className="max-w-6xl mx-auto">
@@ -16,10 +20,26 @@ export default function AboutSection() {
             <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-3xl blur-2xl opacity-25 group-hover:opacity-50 transition duration-500"></div>
             <div className="relative aspect-square rounded-3xl overflow-hidden border-2 border-white/10">
               <div className="absolute inset-0 from-purple-600 via-pink-600 to-cyan-600 opacity-80"></div>
-              <img 
-                src={myImage} 
-                alt="Syed Sajeed" 
-                className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+
+              {!imageLoaded && (
+                <div className="absolute inset-0 z-10">
+                  <Blurhash
+                    hash="L6PZfSNo00_N.49G9G%M00axV?st"
+                    width="100%"
+                    height="100%"
+                    resolutionX={32}
+                    resolutionY={32}
+                    punch={1}
+                  />
+                </div>
+              )}
+
+              <img
+                src={myImage}
+                alt="Syed Sajeed"
+                onLoad={() => setImageLoaded(true)}
+                className={`w-full h-full object-cover object-center transition-all duration-700 group-hover:scale-105 ${imageLoaded ? 'opacity-100' : 'opacity-0'
+                  }`}
               />
             </div>
           </div>

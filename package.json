@@ -12,8 +12,10 @@
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.6.0",
+    "blurhash": "^2.0.5",
     "lucide-react": "^0.545.0",
     "react": "^19.1.1",
+    "react-blurhash": "^0.3.0",
     "react-dom": "^19.1.1"
   },
   "devDependencies": {
